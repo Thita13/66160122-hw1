@@ -1,112 +1,142 @@
-/* สําหรับแท็บเล็ต */
-@media (max-width: 768px) {
- .gallery {
- grid-template-columns: repeat(2, 1fr);
- }
-
- .filters {
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
- gap: 0.5rem;
- }
-
- .filter-btn {
- flex: 0 1 calc(50% - 1rem);
- }
-}
-/* สําหรับมือถือ */
-@media (max-width: 480px) {
- .gallery {
- grid-template-columns: 1fr;
- }
-
- .filter-btn {
- flex: 1 1 100%;
- }
-
- .header h1 {
- font-size: 1.5rem;
- }
-}
-
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
- font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
- line-height: 1.6;
- background: #f5f5f5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.9;
+    background: #f5f5f5;
 }
+
 .header {
- text-align: center;
- color:#213555;
- padding: 2rem;
- background: #D8C4B6;
-}
-.filters {
- margin: 1rem 0;
-}
-.filter-btn {
- padding: 0.5rem 1rem;
- margin: 0 0.5rem;
- border: none;
- border-radius: 25px;
- background: #F5EFE7;
- cursor: pointer;
- transition: all 0.3s ease;
-}
-.filter-btn.active {
- background: #3E5879;
- color: #F5EFE7;
-}
-
-.khonkaen {
     text-align: center;
+    color: #213555;
+    padding: 2rem;
+    background: #9db2da;
 }
 
-.location {
- display: grid;
- grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
- gap: 1rem;
- padding: 1rem;
+.filters {
+    margin: 1rem 0;
 }
-.location-item {
- position: relative;
- overflow: hidden;
- border-radius: 8px;
- box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 25px;
+    background: #F5EFE7;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
-.location img {
- width: 100%;
- height: 100%;
- object-fit: cover;
- display: block;
+
+.filter-btn.active {
+    background: #3E5879;
+    color: #F5EFE7;
 }
-.overlay {
- position: absolute;
- bottom: 0;
- left: 0;
- right: 0;
- background: rgba(0, 0, 0, 0.382);
- color: rgb(255, 255, 255);
- padding: 1rem;
- transform: translateY(100%);
- transition: transform 0.3s ease;
+
+.container {
+    position: relative;
+    min-height: 100vh;
 }
-.location-item:hover .overlay {
- transform: translateY(0);
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
-@keyframes fadeIn {
- from { opacity: 0; }
- to { opacity: 1; }
+
+.bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.ktc.co.th/pub/media/Article/06/ktc-Kaen-Nakhon-Lake.webp');
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(45%);
 }
-.location-item {
- opacity: 0;
- animation: fadeIn 0.5s ease-out forwards;
+
+.content {
+    width: 85%;
+    margin: 0 auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
 }
-.location-item:nth-child(1) { animation-delay: 0.1s; }
-.location-item:nth-child(2) { animation-delay: 0.2s; }
-.location-item:nth-child(3) { animation-delay: 0.3s; }
+
+.grid-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.grid-card .box {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+    position: relative;
+}
+
+.bg1 {
+    background-image: url('https://www.ktc.co.th/pub/media/Article/06/ktc-Khon-Kaen-temple.webp');
+}
+
+.bg2 {
+    background-image: url('https://img.kapook.com/u/2022/sutasinee/08/101.jpg');
+}
+
+.bg3 {
+    background-image: url('https://www.ktc.co.th/pub/media/Article/06/ktc-ba-luang.webp');
+}
+
+.bg4 {
+    background-image: url('https://img.kapook.com/u/2022/sutasinee/08/97.jpg');
+}
+
+.bg5 {
+    background-image: url('https://img.kapook.com/u/2022/sutasinee/08/100.jpg');
+}
+
+.bg6 {
+    background-image: url('https://www.ktc.co.th/pub/media/Article/06/ktc-Namphong.webp');
+}
+
+.content .box h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.content .box:hover {
+    transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+    .grid-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-card {
+        grid-template-columns: 1fr;
+    }
+
+    .text h1 {
+        font-size: 2rem;
+    }
+}

@@ -1,69 +1,53 @@
 <!DOCTYPE html>
 <html lang="th">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>สถานที่ท่องเที่ยวในจังหวัดขอนแก่น</title>
-            <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header class="header">
-            <h1>สถานที่ท่องเที่ยวในจังหวัดขอนแก่น</h1>
-            <nav class="header">
-                <button class="filter-btn active" data-filter="all">หน้าหลัก</button>
-                <button class="filter-btn" data-filter="content">สถานที่ท่องเที่ยว</button>
-                <button class="filter-btn" data-filter="contact">ติดต่อเรา</button>    
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สถานที่ท่องเที่ยวในจังหวัดขอนแก่น</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>สถานที่ท่องเที่ยวในจังหวัดขอนแก่น</h1>
+        <nav class="filters">
+            <button class="filter-btn active" data-filter="all">หน้าหลัก</button>
+            <button class="filter-btn" data-filter="content">สถานที่ท่องเที่ยว</button>
+            <button class="filter-btn" data-filter="contact">ติดต่อเรา</button>    
+        </nav>
+    </header>
 
-        <main class="khonkaen">
-            <h2>ขอนแก่น</h2>
-            เมื่อพูดถึงที่เที่ยวที่น่าสนใจในแถบภาคอีสาน จังหวัดแรกๆ ที่เราอยากจะแนะนำเลยก็คือ ที่เที่ยวขอนแก่น<br>
-            เพราะเป็นจังหวัดใจกลางภาคอีสานที่น่าสนใจมากๆ ความน่าสนใจอันดับแรกก็คือขนาดของขอนแก่น ที่ค่อนข้างใหญ่ และเป็นศูนย์กลางของทุกอย่าง<br>
-            มีสิ่งอำนวยความสะดวก ความเจริญครบครัน นอกจากนั้นขอนแก่นก็ยังมีสถานที่ท่องเที่ยวทางธรรมชาติอีกมากมาย สำหรับนักท่องเที่ยว<br>
-        </main>
+    <div class="container bg"></div>
 
-        <main class="location">
-            <div class="location-item">
-                <img src="https://img.kapook.com/u/2022/sutasinee/08/94.jpg" alt="วัดหนองแวง">
-                <div class="overlay">
-                    <h3>วัดหนองแวง</h3>
-                    <p>ที่อยู่ : ถนนกลางเมือง ตำบลในเมือง อำเภอเมือง จังหวัดขอนแก่น</p>
-                </div>
+    <div class="content">
+        <div class="text">
+            <h1>KHON</h1>
+            <h1>KAEN</h1>
+        </div>
+        <div class="grid-card">
+            <div class="box bg1">
+                <h2>วัดหนองแวง</h2>
             </div>
 
-            <div class="location-item">
-                <img src="https://img.kapook.com/u/2022/sutasinee/08/101.jpg" alt="ศูนย์ศึกษาวิจัยและพิพิธภัณฑ์ไดโนเสาร์ภูเวียง">
-                <div class="overlay">
-                    <h3>ศูนย์ศึกษาวิจัยและพิพิธภัณฑ์ไดโนเสาร์ภูเวียง</h3>
-                    <p>ที่อยู่ : ตำบลในเมือง อำเภอเวียงเก่า จังหวัดขอนแก่น</p>
-                </div>
+            <div class="box bg2">
+                <h2>ศูนย์ศึกษาวิจัยและพิพิธภัณฑ์ไดโนเสาร์ภูเวียง</h2>
             </div>
 
-            <div class="location-item">
-                <img src="https://img.kapook.com/u/2022/sutasinee/08/98.jpg" alt="น้ำตกบ๋าหลวง">
-                <div class="overlay">
-                    <h3>น้ำตกบ๋าหลวง</h3>
-                    <p>ที่อยู่ : ตำบลห้วยยาง อำเภอกระนวน จังหวัดขอนแก่น</p>
-                </div>
+            <div class="box bg3">
+                <h2>น้ำตกบ๋าหลวง</h2>
             </div>
 
-            <div class="location-item">
-                <img src="https://img.kapook.com/u/2022/sutasinee/08/97.jpg" alt="จุดชมวิวหินช้างสี">
-                <div class="overlay">
-                    <h3>จุดชมวิวหินช้างสี</h3>
-                    <p>ที่อยู่ : อุทยานแห่งชาติน้ำพอง อำเภอหนองเรือ จังหวัดขอนแก่น</p>
-                </div>
+            <div class="box bg4">
+                <h2>จุดชมวิวหินช้างสี</h2>
             </div>
 
-            <div class="location-item">
-                <img src="https://img.kapook.com/u/2022/sutasinee/08/100.jpg" alt="อุทยานแห่งชาติภูผาม่าน">
-                <div class="overlay">
-                    <h3>อุทยานแห่งชาติภูผาม่าน</h3>
-                    <p>ที่อยู่ : อำเภอชุมแพ อำเภอภูผาม่าน จังหวัดขอนแก่น</p>
-                </div>
+            <div class="box bg5">
+                <h2>อุทยานแห่งชาติภูผาม่าน</h2>
             </div>
 
-        </main>
-    </body>
+            <div class="box bg6">
+                <h2>จุดชมวิวหินช้างสี อุทยานแห่งชาติน้ำพอง</h2>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
