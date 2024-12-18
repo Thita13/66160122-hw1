@@ -17,7 +17,14 @@ body {
     background: #9db2da;
 }
 
+.header h1 {
+    color: #213555;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
 .filters {
+    text-align: center;
     margin: 1rem 0;
 }
 
@@ -28,13 +35,14 @@ body {
     border-radius: 25px;
     background: #F5EFE7;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
-.filter-btn.active {
-    background: #3E5879;
-    color: #F5EFE7;
+.filter-btn:hover {
+    background-color: #3E5879;
+    color: #fff;
 }
+
 
 .container {
     position: relative;
@@ -123,7 +131,7 @@ body {
 }
 
 .bg6 {
-    background-image: url('https://www.ktc.co.th/pub/media/Article/06/ktc-Namphong.webp');
+    background-image: url('https://www.ktc.co.th/pub/media/Article/06/ktc-Phra-That-Kham.webp');
 }
 
 .content .box h2 {
