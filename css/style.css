@@ -5,6 +5,10 @@
     font-family: Arial, sans-serif;
 }
 
+* a {
+    text-decoration: none;
+}
+
 .header {
     text-align: center;
     color: #213555;
@@ -16,6 +20,7 @@
     color: #213555;
     font-size: 2.5rem;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .filters {
