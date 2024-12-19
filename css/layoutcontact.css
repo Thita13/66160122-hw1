@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -15,7 +16,13 @@ body {
     text-align: center;
     color: #213555;
     padding: 2rem;
+    margin-bottom: 2rem;
     background: #9db2da;
+}
+.header h1 {
+    color: #213555;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .filters {
@@ -30,7 +37,7 @@ body {
     border-radius: 25px;
     background: #F5EFE7;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease;
 }
 
 .filter-btn:hover {
