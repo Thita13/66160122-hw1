@@ -105,11 +105,9 @@
 .bg1 {
     background-image: url('https://www.ktc.co.th/pub/media/Article/06/ktc-Khon-Kaen-temple.webp');
 }
-
 .bg2 {
     background-image: url('https://img.kapook.com/u/2022/sutasinee/08/101.jpg');
 }
-
 .bg3 {
     background-image: url('https://www.ktc.co.th/pub/media/Article/06/ktc-ba-luang.webp');
 }
@@ -117,13 +115,17 @@
 .bg4 {
     background-image: url('https://img.kapook.com/u/2022/sutasinee/08/97.jpg');
 }
-
 .bg5 {
     background-image: url('https://img.kapook.com/u/2022/sutasinee/08/100.jpg');
 }
-
 .bg6 {
     background-image: url('https://www.ktc.co.th/pub/media/Article/06/ktc-Phra-That-Kham.webp');
+}
+.bg7 {
+    background-image: url('https://www.ktc.co.th/pub/media/Article/06/ktc-Ubol-Ratana-Dam.webp');
+}
+.bg8 {
+    background-image: url('https://www.ktc.co.th/pub/media/Article/06/ktc-Phu-Kao.webp');
 }
 
 .grid-card .box h2 {
@@ -132,7 +134,7 @@
     left: 15px;
     color: #FFFFFF;
     font-size: 1rem;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
 }
 
 .grid-card .box:hover {
