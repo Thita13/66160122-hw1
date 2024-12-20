@@ -1,1 +1,66 @@
 # 66160122-hw1
+-git checkout -b development
+-git add .
+-git commit -m "สร้างโครงสร้าง"
+-git checkout -b feature/home-page/
+-git add index.html
+-git commit -m "หน้าหลัก"
+-git add css/style.css
+-git commit -m "เพิ่ม layout ด้วย css"
+-git add css/style.css
+-git commit -m "เพิ่ม Media Queries สำหรับ  Responsive Design"
+-git add .
+-git commit -m "เพิ่มสถานที่ท่องเที่ยว"
+-git add .
+-git commit -m "เพิ่ม Hover และ Loading Animations"
+-git checkout -b feature/contact-page
+-git add .
+-git commit -m "create contact"
+-git checkout development
+-git checkout feature/home-page
+-git add .
+-git commit -m "แก้ไขหน้าindex"
+-git add .
+-git commit -m "home finish"
+-git add .
+-git commit -m "เพิ่มcssให้หน้าcontact"
+-git checkout -b feature/about-page
+-git add .
+-git commit -m "จัดหน้าcontent"
+-git checkout feature/home-page
+-git add .
+-git commit -m "แก้ไขเนื้อหาที่ทำผิด"
+-git add .
+-git commit -m "edit Responsive Design"
+-git checkout feature/about-page
+-git add .
+-git commit -m "เพิ่มสถานที่ในหน้าcontent"
+-git add .
+-git commit -m "edit img"
+-git checkout feature/contact-page
+-git add .
+-git commit -m "เพิ่มcssตกแต่งหน้าcontact"
+-git add .
+-git commit -m "ตกแต่งหน้าcontact"
+-git add .
+-git commit -m "แก้ไขปุ่มหน้าติดต่อ"
+-git checkout feature/home-page
+-git add .
+-git commit -m "แก้ไขปุ่มหน้าหลัก"
+-git checkout feature/about-page
+-git add .
+-git commit -m "แก้ไขปุ่มหน้าสถานที่"
+-git add .
+-git commit -m "editปุ่ม"
+-git checkout feature/home-page
+-git add .
+-git commit -m "edit ปุ่มhome"
+-git checkout feature/contact-page
+-git add .
+-git commit -m "finish contact"
+-git checkout development
+-git merge feature/home-page
+-git merge feature/about-page
+-git add css/layoutcontact.css
+-git add .
+-git commit -m "finish hw1"
