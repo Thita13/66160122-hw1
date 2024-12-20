@@ -186,6 +186,23 @@ button[type="submit"]:hover {
     line-height: 1.5;
 }
 
+@media (max-width: 1024px) {
+    .grid-card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .grid-card img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 @media (max-width: 768px) {
     .grid-card {
         grid-template-columns: repeat(2, 1fr);
